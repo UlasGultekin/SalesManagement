@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::p, comp panel1:::::x, space :::p}, seq l {space :p:51:p, comp btnDelete:::p:149:p, space ::199:x, comp btnBuy:::p:149:p, space :p:50:p}, seq l {space :p:101:p, comp label50:::p:64:p, space :12:12:p, comp cmbSaleCustomer:::p:161:p, space s:::p, comp btnSearch:::p::p, space ::164:x}}"
+			"$verticalGroup": "par l {seq l {space :p:8:p, par l {comp label50:::p::p, par b {comp cmbSaleCustomer::b:p::p, comp btnSearch::b:p::p}}, space :::p, comp panel1:::p:179:p, space :::p, par b {comp btnDelete::b:p::p, comp btnBuy::b:p::p}, space ::259:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1::::574:x, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:168:p, space :::x}}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "tblBasket"
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDelete"
+				"text": "Delete"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteClick", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnBuy"
+				"text": "Buy"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnBuyClick", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cmbSaleCustomer"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "cmbSaleCustomerMouseEntered", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label50"
+				"text": "Customer"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSearch"
+				"text": "Search"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSearchClick", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSearchClick", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 600, 550 )
+		} )
+	}
+}
