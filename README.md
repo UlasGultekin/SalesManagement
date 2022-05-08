@@ -4,8 +4,7 @@ Java Desktop Sales Management
 
 *This project enables a company with different product stocks in different categories to easily sell to its customers. It does not include only the payment part, so the current account of the customer is not kept, and the information of which customer buys products from which category and when can be easily accessed.
 
-*
-Users defined in the login form log in with their passwords. User passwords are encrypted with the MD5 algorithm. A form has been designed for the user who forgot his password. When the forgot password button is pressed, the e-mail address is checked and a new form is opened if it is correct. At the same time, the verification code is sent to the user's e-mail address. When the code is submitted and the code is saved in the database. In this way, the necessary comparison is made.
+*Users defined in the login form log in with their passwords. User passwords are encrypted with the MD5 algorithm. A form has been designed for the user who forgot his password. When the forgot password button is pressed, the e-mail address is checked and a new form is opened if it is correct. At the same time, the verification code is sent to the user's e-mail address. When the code is submitted and the code is saved in the database. In this way, the necessary comparison is made.
 
 *The main form opens for the user who logs in with the correct e-mail address and password.
 
